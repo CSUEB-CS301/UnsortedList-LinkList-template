@@ -130,7 +130,7 @@ void PrintList(ofstream& dataFile, UnsortedList<int>& list)
 	dataFile << "PrintList" << endl;
 	cout << "PrintList: ";
 
-	list.ResetIterator();	         // Sets currentPos = -1
+	list.ResetIterator();	         // Sets currentPos to head
 	length = list.GetLength();
 	if (length == 0)
 		dataFile << "List is empty.";
