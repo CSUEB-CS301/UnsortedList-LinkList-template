@@ -32,10 +32,6 @@ int main()
 	cin >> outFileName;
 	outFile.open(outFileName);
 
-	cout << "Enter name of test run: ";
-	cin >> outputLabel;
-
-	outFile << outputLabel << endl;
 	if (!inFile)
 	{
 		cout << "File not found." << endl;
