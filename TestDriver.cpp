@@ -45,23 +45,23 @@ int main()
 	while (command != "Quit")
 	{
 		//cout << "Command: " << command;
-		if (command == "PutItem")
+		if (command == "AddItem")
 		{
 			inFile >> item;
 			//cin >> item;
-			list.PutItem(item);
-            cout << item;
-            cout << " is in list." << endl;
+			list.AddItem(item);
+            		cout << item;
+            		cout << " added to list." << endl;
 			outFile << item;
-			outFile << " is in list." << endl;
+			outFile << " added to list." << endl;
 		}
 		else if (command == "DeleteItem")
 		{
 			inFile >> item;
 			//cin >> item;
 			list.DeleteItem(item);
-            cout << item;
-            cout << " is deleted." << endl;
+           		cout << item;
+            		cout << " is deleted." << endl;
 			outFile << item;
 			outFile << " is deleted." << endl;
 		}
@@ -79,21 +79,21 @@ int main()
 			}
 		}
 		else if (command == "GetLength") {
-            cout << "Length is " << list.GetLength() << endl;
+            		cout << "Length is " << list.GetLength() << endl;
 			outFile << "Length is " << list.GetLength() << endl;
 		}
 		else if (command == "IsFull") {
 			if (list.IsFull()) {
-                cout << "List is full." << endl;
-                outFile << "List is full." << endl;
+				cout << "List is full." << endl;
+				outFile << "List is full." << endl;
             } else {
                 cout << "List is not full." << endl;
                 outFile << "List is not full." << endl;
             }
 		}
 		else if (command == "MakeEmpty") {
-            cout << "Make list empty." << endl;
-            outFile << "Make list empty." << endl;
+			out << "Make list empty." << endl;
+			outFile << "Make list empty." << endl;
 			list.MakeEmpty();
 		}
 		else if (command == "PrintList") {
